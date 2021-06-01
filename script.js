@@ -26,4 +26,27 @@ saveBtn.on("click", function() {
     localStorage.setItem(current,event);
 })
 
-//color coding timeblocks which is preset in css
+//color coding timeblocks which i commented out in css
+var daytime = [ "9" , "10" , "11" , "12" , "13" , "14", "15", "16", "17" ]
+
+function timeColor() {
+    var timeNow = moment().format("H");
+
+    for(var i = 0; i < daytime.length; i++) {
+
+        if (parseInt(daytime[i]) > timeNow) {
+            $("#" + daytime[i]).attr("style", "background-color: lightgreen");
+        //future
+        } else if (parseInt(daytime[i]) < timeNow) {
+            $("#" + daytime[i]).attr("style", "background-color: pink");
+         //past   
+        } else if  (parseInt(daytime[i]) == timeNow) {
+            $("#" + daytime[i]).attr("style", "background-color:grey");
+        //current
+        }
+    }
+}
+
+//runs function
+timeColor()
+

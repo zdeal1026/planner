@@ -36,7 +36,7 @@ The purpose of this build was to use tools given to us in class to create a plan
 
 
 # Notes
-
+Still getting used to coding. This was challenging but there were an abundance of matierials to use for reference. Setting the color to update with time was frustrating. I think I finally figured it out but the local storage and the color is what I struggled with the most on this project. 
 
 # Credits
 Matierial and ideas borrowed from Trilogy Education services along with teachings from Anthony Cooper, Mahesh Kommareddi, and multiple TA's. 
