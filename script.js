@@ -1,4 +1,4 @@
-//sets header data 
+//sets header time from moment
 function planner() {
 
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
