@@ -17,6 +17,7 @@ dayPlanner
 
 
 # Purpose
+The purpose of this build was to use tools given to us in class to create a planner that was responsive to time that would save inputs in local storage. We were given a css file to create timeblocks in our html. After that we created a js file to run the functions of the page. 
 
 
 
@@ -38,8 +39,7 @@ dayPlanner
 
 
 # Credits
-Matierial and ideas borrowed from Trilogy Education services along with teachings from Anthony Cooper and Sasha Peterson. 
-
+Matierial and ideas borrowed from Trilogy Education services along with teachings from Anthony Cooper, Mahesh Kommareddi, and multiple TA's. 
 
 # Screenshot        
 
