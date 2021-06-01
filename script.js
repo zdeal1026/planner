@@ -1,16 +1,22 @@
-//setting variables
-var current = moment();
-var nine = $("9")
-var ten = $("10")
-var eleven = $("11")    
-var twelve = $("12")
-var one = $("1")
-var two = $("2")
-var three = $("3")
-var four = $("4")
-var five = $("5")
+//sets header data 
+function planner() {
 
-saveData();
+    $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
+
+    $(".time-block").each(function () {
+        var id = $(this).attr("id");
+        var event = localStorage.getItem(id);
+
+        if (event !== null) {
+            $(this).children(".event").val(event);
+        }
+    });
+}
+
+//runs the function
+planner();
+
+//saves text to local storage
 var saveBtn = $(".saveBtn");
 
 saveBtn.on("click", function() {
@@ -19,3 +25,5 @@ saveBtn.on("click", function() {
 
     localStorage.setItem(current,event);
 })
+
+//color coding timeblocks which is preset in css
